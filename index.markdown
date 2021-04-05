@@ -5,6 +5,6 @@
 layout: home
 ---
 
-Hi! I'm Arvind, a CS major at the [University of Texas at Austin](https://www.utexas.edu/). 
+Hi! I'm Arvind, a CS major at the [University of Texas at Austin](https://www.utexas.edu/).
 
 On this blog, you will find articles on random interesting things and documentation of my progress during [Google Summer of Code 2021](https://summerofcode.withgoogle.com/).
