@@ -45,7 +45,7 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
-  "_scss/base",
-  "_scss/layout",
-  "_scss/syntax-highlighting"
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
 ;
