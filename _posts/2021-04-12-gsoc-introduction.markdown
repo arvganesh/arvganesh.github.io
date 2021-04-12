@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Introduction – GSoC '21"
-date:   2021-04-04 22:10:13 -0500
-categories: GSOC time-series 
+categories: GSOC 
 ---
 Hi! Over the next few months, I'll be posting updates of my work on Pythia, a library for time-series forecasting in Julia, inspired by [fable](https://fable.tidyverts.org/) in R, and [sktime](https://www.sktime.org/en/latest/) in Python. I want to use this post to briefly describe the motivation and overarching goals of the project. To learn more, check out my [proposal](https://docs.google.com/document/d/1PPBPF0ZWney-bK3XLIOo76HGcqaLp5rlQmeWVeC354s/edit?usp=sharing).
 
