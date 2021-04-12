@@ -1,5 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-05T00:42:33-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Arvind Ganesh</title><subtitle></subtitle><entry><title type="html">Introduction</title><link href="http://localhost:4000/jekyll/update/2021/04/04/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Introduction" /><published>2021-04-04T22:10:13-05:00</published><updated>2021-04-04T22:10:13-05:00</updated><id>http://localhost:4000/jekyll/update/2021/04/04/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/04/04/welcome-to-jekyll.html">&lt;p&gt;Test Post.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-12T16:21:10-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Arvind Ganesh</title><subtitle></subtitle><entry><title type="html">Introduction – GSoC ‘21</title><link href="http://localhost:4000/gsoc/time-series/2021/04/04/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Introduction – GSoC ‘21" /><published>2021-04-04T22:10:13-05:00</published><updated>2021-04-04T22:10:13-05:00</updated><id>http://localhost:4000/gsoc/time-series/2021/04/04/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/gsoc/time-series/2021/04/04/welcome-to-jekyll.html">&lt;p&gt;Hi! Over the next few months, I’ll be posting updates of my work on Pythia, a library for time-series forecasting in Julia, inspired by &lt;a href=&quot;https://fable.tidyverts.org/&quot;&gt;fable&lt;/a&gt; in R, and &lt;a href=&quot;https://www.sktime.org/en/latest/&quot;&gt;sktime&lt;/a&gt; in Python. I want to use this post to briefly describe the motivation and overarching goals of the project. To learn more, check out my &lt;a href=&quot;https://docs.google.com/document/d/1PPBPF0ZWney-bK3XLIOo76HGcqaLp5rlQmeWVeC354s/edit?usp=sharing&quot;&gt;proposal&lt;/a&gt;.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;/h3&gt;
 
-&lt;p&gt;Goodbye.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Test Post.</summary></entry></feed>
+&lt;p&gt;Time-series forecasting is quickly becoming an important tool in many fields. From finance¹, to epidemiology², to sales³, understanding the future is critical for making optimal decisions in the present.&lt;/p&gt;
+
+&lt;p&gt;While libraries with robust time-series forecasting capability exist in languages like &lt;a href=&quot;https://cran.r-project.org/web/packages/forecast/index.html&quot;&gt;R&lt;/a&gt; and &lt;a href=&quot;https://www.statsmodels.org/stable/index.html&quot;&gt;Python&lt;/a&gt;, one with similar ease-of-use and functionality does not exist in Julia. The goal of this project is to develop and extend Pythia, a Julia library for time-series forecasting. Specifically, the focus of this summer will be to extend Pythia to include common forecasting algorithms, evaluation metrics, and plotting capabilities. Additionally, Pythia will be compatible with the &lt;a href=&quot;https://github.com/alan-turing-institute/MLJ.jl#the-mlj-universe&quot;&gt;MLJ ecosystem&lt;/a&gt;. Furthermore, unit tests, documentation, and tutorials will be written.&lt;/p&gt;
+
+&lt;p&gt;Inspired by &lt;a href=&quot;https://cran.r-project.org/web/packages/forecast/index.html&quot;&gt;forecast&lt;/a&gt;, &lt;a href=&quot;https://fable.tidyverts.org/&quot;&gt;fable&lt;/a&gt;, &lt;a href=&quot;https://www.statsmodels.org/stable/index.html&quot;&gt;statsmodels&lt;/a&gt;, and &lt;a href=&quot;https://www.sktime.org/en/latest/&quot;&gt;sktime&lt;/a&gt;, Pythia will compile a variety of important functions for time series forecasting into &lt;strong&gt;one unified interface&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;goals&quot;&gt;Goals&lt;/h3&gt;
+
+&lt;p&gt;To compartmentalize development, Pythia development will be separated into a few different blocks.&lt;/p&gt;
+
+&lt;h4 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h4&gt;
+&lt;p&gt;I plan on implementing these algorithms:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Croston’s + Croston’s Adjusted Method&lt;/li&gt;
+  &lt;li&gt;Exponetial Smoothing Algorithms (ETS)
+    &lt;ul&gt;
+      &lt;li&gt;Simple Exponential Smoothing (implemented here)&lt;/li&gt;
+      &lt;li&gt;Holt’s Linear Methods&lt;/li&gt;
+      &lt;li&gt;Dampted Trend Methods&lt;/li&gt;
+      &lt;li&gt;Holt-Winter’s Method&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ARMA Models – (p, q)&lt;/li&gt;
+  &lt;li&gt;Mean Forecasts&lt;/li&gt;
+  &lt;li&gt;Theta Method Forecasts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both seasonal and non-seasonal models will be supported.&lt;/p&gt;
+
+&lt;h4 id=&quot;evaluation-metrics&quot;&gt;Evaluation Metrics&lt;/h4&gt;
+&lt;p&gt;To evaluate forecasts, the following methods will be included:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mean Absolute Error (MAE)&lt;/li&gt;
+  &lt;li&gt;Root Mean Squared Error (RMSE)&lt;/li&gt;
+  &lt;li&gt;Scaled Errors⁴&lt;/li&gt;
+  &lt;li&gt;Prediction Intervals&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;visualization&quot;&gt;Visualization&lt;/h4&gt;
+&lt;p&gt;To visualize forecasts, users will be able to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Plot observed and predicted observations vs. time&lt;/li&gt;
+  &lt;li&gt;Plot Prediction Intervals&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;mlj-integration&quot;&gt;MLJ Integration&lt;/h4&gt;
+&lt;p&gt;First, Pythia will be written as a standalone library. After the forecasting algorithms have been written, a wrapper for Pythia will be written in MLJ.&lt;/p&gt;
+
+&lt;p&gt;Additionally, tests, documentation, and tutorials will be written.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Thanks for reading! Please reach out to me via the &lt;a href=&quot;https://julialang.org/slack/&quot;&gt;Julia Slack&lt;/a&gt; (@arvganesh) if you have any questions or are interested in contributing. Finally, I’d like to thank my mentors &lt;a href=&quot;https://www.turing.ac.uk/people/researchers/sebastian-vollmer&quot;&gt;Sebastian Vollmer&lt;/a&gt;, &lt;a href=&quot;https://ababii.github.io/&quot;&gt;Andrii Babii&lt;/a&gt;, and &lt;a href=&quot;https://www.turing.ac.uk/people/former-enrichment-students/markus-loning&quot;&gt;Markus Löning&lt;/a&gt; for their feedback and advice on my proposal.&lt;/p&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Kim, K. 2003. “Financial Time Series Forecasting Using Support Vector Machines.” Neurocomputing.&lt;/li&gt;
+  &lt;li&gt;Maleki, Mohsen, Mohammad Reza Mahmoudi, Darren Wraith, and Kim-Hung Pho. 2020. “Time Series Modelling to Forecast the Confirmed and Recovered Cases of COVID-19.” Travel Medicine and Infectious Disease 37 (September): 101742.&lt;/li&gt;
+  &lt;li&gt;Willemain, Thomas R., Charles N. Smart, Joseph H. Shockor, and Philip A. DeSautels. 1994. “Forecasting Intermittent Demand in Manufacturing: A Comparative Evaluation of Croston’s Method.” International Journal of Forecasting 10 (4): 529–38.&lt;/li&gt;
+  &lt;li&gt;Hyndman, Rob J., and Anne B. Koehler. 2006. “Another Look at Measures of Forecast Accuracy.” International Journal of Forecasting. https://doi.org/10.1016/j.ijforecast.2006.03.001.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="GSOC" /><category term="time-series" /><summary type="html">Hi! Over the next few months, I’ll be posting updates of my work on Pythia, a library for time-series forecasting in Julia, inspired by fable in R, and sktime in Python. I want to use this post to briefly describe the motivation and overarching goals of the project. To learn more, check out my proposal.</summary></entry></feed>
