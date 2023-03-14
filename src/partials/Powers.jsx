@@ -6,7 +6,8 @@ function Powers() {
 
   return (
     <div className="w-6/12 font-medium">
-        <div className="w-full text-gray-700 dark:text-gray-100 border border-black/10 dark:border-gray-900/50 dark:bg-gray-800 rounded-t-xl">
+        {/* <div className="w-full text-gray-700 dark:text-gray-100 border border-black/10 dark:border-gray-900/50 dark:bg-gray-800 rounded-t-xl"> */}
+        <div className="w-full text-gray-700 border border-black/10 rounded-t-xl">  
         <div className="text-base items-center gap-4 md:gap-6 md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex m-auto">
                 <div className="w-[30px] flex relative items-end">
                     <div className="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center">
@@ -26,7 +27,7 @@ function Powers() {
                 </div>
             </div>
         </div>
-        <div className="w-full text-gray-700 dark:text-gray-100 border border-black/10 dark:border-gray-900/50 bg-gray-50 dark:bg-[#444654] flipthis-highlight rounded-b-xl">
+        <div className="w-full text-gray-700 border border-black/10 bg-gray-50 flipthis-highlight rounded-b-xl">
             <div className="text-base items-center gap-4 md:gap-6 md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex m-auto">
                 <div className="w-[30px] flex relative items-end">
                     <div className="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center" style={{ backgroundColor: "rgb(16, 163, 127)" }}>
