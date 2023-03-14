@@ -6,7 +6,6 @@ function Powers() {
 
   return (
     <div className="w-6/12 font-medium">
-        {/* <div className="w-full text-gray-700 dark:text-gray-100 border border-black/10 dark:border-gray-900/50 dark:bg-gray-800 rounded-t-xl"> */}
         <div className="w-full text-gray-700 border border-black/10 rounded-t-xl">  
         <div className="text-base items-center gap-4 md:gap-6 md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex m-auto">
                 <div className="w-[30px] flex relative items-end">
@@ -17,7 +16,7 @@ function Powers() {
                 <div className="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]">
                     <div className="flex flex-grow flex-col gap-3">
                         <div className="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
-                            <div className="markdown prose w-full break-words dark:prose-invert light">
+                            <div className="markdown prose w-full break-words light">
                                 <p className="">
                                         Do you have superpowers?
                                 </p>
@@ -50,7 +49,7 @@ function Powers() {
                 <div className="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]">
                     <div className="flex flex-grow flex-col gap-3">
                         <div className="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
-                            <div className="markdown prose w-full break-words dark:prose-invert light">
+                            <div className="markdown prose w-full break-words light">
                                 <p className="animate-blink">
                                 ▋
                                 </p>
