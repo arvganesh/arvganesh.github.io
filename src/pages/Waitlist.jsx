@@ -20,11 +20,11 @@ function SignUp() {
 
               {/* Page header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                <h1 className="h1">Welcome to Tooler.</h1>
+                <h1 className="h1">Coming soon...</h1>
               </div>
 
               {/* Form */}
-              <div className="max-w-sm mx-auto">
+              {/* <div className="max-w-sm mx-auto">
                 <form>
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
@@ -83,7 +83,7 @@ function SignUp() {
                 <div className="text-gray-600 text-center mt-6">
                   Already using Simple? <Link to="/signin" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign in</Link>
                 </div> 
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

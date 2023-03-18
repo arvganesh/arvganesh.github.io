@@ -113,7 +113,7 @@ module.exports = {
       },
       animation: {
         float: 'float 3s ease-in-out infinite',
-        blink: 'blink 1s infinite',
+        blink: 'blink 2s infinite',
       },
       keyframes: {
         float: {
@@ -121,8 +121,8 @@ module.exports = {
           '50%': { transform: 'translateY(-5%)', },
         },
         blink: {
-          '0%': { opacity: 0},
-          '100%': {opacity: 1},
+          '0%, 25%, 100%': { opacity: 0 },
+          '30%, 95%': { opacity: 1 },
         },
       },
       zIndex: {

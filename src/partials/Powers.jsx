@@ -5,20 +5,20 @@ function Powers() {
 //   const [bannerOpen, setBannerOpen] = useState(true);
 
   return (
-    <div className="w-6/12 font-medium">
-        <div className="w-full text-gray-700 border border-black/10 rounded-t-xl">  
-        <div className="text-base items-center gap-4 md:gap-6 md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex m-auto">
+    <div className="w-10/12 lg:w-6/12 md:w-6/12 sm:w-8/12 font-medium">
+        <div className="w-full text-gray-700 border border-black/10 rounded-t-xl">
+            <div className="text-base items-center gap-4 md:gap-6 md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex m-auto">
                 <div className="w-[30px] flex relative items-end">
                     <div className="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><path d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm6 10a1 1 0 0 0 1-1 7 7 0 0 0-14 0 1 1 0 0 0 1 1z" data-name="person"/></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><path d="M12 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm6 10a1 1 0 0 0 1-1 7 7 0 0 0-14 0 1 1 0 0 0 1 1z" data-name="person"/></g></svg>
                     </div>
                 </div>
                 <div className="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]">
                     <div className="flex flex-grow flex-col gap-3">
                         <div className="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
-                            <div className="markdown prose w-full break-words light">
+                            <div className="markdown prose w-full break-words dark:prose-invert light">
                                 <p className="">
-                                        Do you have superpowers?
+                                    Do you have superpowers?
                                 </p>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ function Powers() {
         <div className="w-full text-gray-700 border border-black/10 bg-gray-50 flipthis-highlight rounded-b-xl">
             <div className="text-base items-center gap-4 md:gap-6 md:max-w-2xl lg:max-w-2xl xl:max-w-3xl p-4 md:py-6 flex m-auto">
                 <div className="w-[30px] flex relative items-end">
-                    <div className="relative h-[30px] w-[30px] p-1 rounded-sm text-white flex items-center justify-center" style={{ backgroundColor: "rgb(16, 163, 127)" }}>
+                    <div className="relative h-[30px] w-[30px] p-1 rounded text-white flex items-center justify-center" style={{ backgroundColor: "rgb(16, 163, 127)" }}>
                         <svg
                             width={41}
                             height={41}
@@ -49,7 +49,7 @@ function Powers() {
                 <div className="relative flex w-[calc(100%-50px)] flex-col gap-1 md:gap-3 lg:w-[calc(100%-115px)]">
                     <div className="flex flex-grow flex-col gap-3">
                         <div className="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
-                            <div className="markdown prose w-full break-words light">
+                            <div className="markdown prose w-full break-words dark:prose-invert light">
                                 <p className="animate-blink">
                                 ▋
                                 </p>

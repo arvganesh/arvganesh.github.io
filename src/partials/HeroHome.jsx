@@ -35,7 +35,7 @@ function HeroHome() {
           <div className="text-center pb-6 md:pb-8">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out"> Give your chatbots <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">superpowers</span></h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150"> Teach AI to use your APIs 🚀 – powered by GPT-3 ⚡️ </p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150"> Teach AI to use your APIs 🚀<br></br>Powered by GPT⚡️ </p>
             </div>
           </div>
 
@@ -64,7 +64,7 @@ function HeroHome() {
                   </defs>
                 </svg>
               </div>
-              <Powers></Powers>
+              <Powers />
             </div>
           </div>
 
